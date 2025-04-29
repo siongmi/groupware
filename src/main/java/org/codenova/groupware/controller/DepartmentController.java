@@ -26,7 +26,7 @@ public class DepartmentController {
     public ResponseEntity<List<Department>> getDepartmentHandle() {
         List<Department> list =departmentRepository.findAll();
 
-        return ResponseEntity.status(200).body(list);
+        return ResponseEntity.status(200).body(list);  // 200 코드는 ok 요청이 성공했음을 나타내는 성공 응답 상태 코드
 
     }
 
